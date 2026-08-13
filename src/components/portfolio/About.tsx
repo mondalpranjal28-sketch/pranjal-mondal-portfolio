@@ -44,13 +44,7 @@ export function About() {
     </p>
   </div>
 </div>
-            <div className="min-w-0">
-              <p className="truncate font-display font-semibold">{profile.name}</p>
-              <p className="truncate font-mono text-xs text-muted-foreground">
-                developer-identity.json
-              </p>
-            </div>
-          </div>
+          </aside>
 
           <dl className="mt-4 space-y-3 text-sm">
             <div className="flex items-start gap-3">

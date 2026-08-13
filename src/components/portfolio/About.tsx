@@ -16,10 +16,34 @@ export function About() {
         </div>
 
         <aside className="glass card-hover rounded-2xl p-6">
-          <div className="flex items-center gap-3 border-b border-border pb-4">
-            <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-border bg-secondary/60 font-display font-bold text-gradient">
-              {profile.monogram}
-            </span>
+         <div className="flex flex-col gap-5 border-b border-border pb-5 sm:flex-row sm:items-center">
+  <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-2xl border border-primary/30 bg-secondary/60 shadow-[0_0_35px_-12px_hsl(var(--primary))]">
+    <img
+      src={profile.profileImage}
+      alt={`${profile.name} profile photo`}
+      className="h-full w-full object-cover object-top"
+      loading="lazy"
+    />
+    <span
+      className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10"
+      aria-hidden="true"
+    />
+  </div>
+
+  <div className="min-w-0">
+    <p className="font-display text-lg font-semibold">
+      {profile.name}
+    </p>
+
+    <p className="mt-1 font-mono text-xs text-cyan/80">
+      developer-identity.json
+    </p>
+
+    <p className="mt-2 text-sm text-muted-foreground">
+      {profile.headline}
+    </p>
+  </div>
+</div>
             <div className="min-w-0">
               <p className="truncate font-display font-semibold">{profile.name}</p>
               <p className="truncate font-mono text-xs text-muted-foreground">

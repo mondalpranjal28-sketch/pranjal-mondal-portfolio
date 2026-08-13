@@ -5,6 +5,7 @@
 
 export const profile = {
   name: "Pranjal Mondal",
+  profileImage: "/profile/pranjal-mondal.jpg",
   monogram: "PM",
   headline: "Full-Stack Web Developer | Software Developer",
   positioning:
